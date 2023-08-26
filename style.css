@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: black;
+    padding-inline: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.logo {
+    font-family: 'EB Garamond', serif;
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.infos{
+    max-width: 1280px;
+    height: 70px;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos-item {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+    font-style: normal;
+}
+
+.infos-item a{
+    font-family: 'DM Sans', sans-serif;
+    padding-block: 15px;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 16px;
+}
+
+.hero{
+    height: calc(100vh - 70px);
+    background: #1e1e1e;
+}
+
+.btn-menu{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 4px solid #FFF;
+    cursor: pointer;
+}
+
+.btn-menu::before,
+.btn-menu::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #FFF;
+    margin-top: 5px;
+}
+
+@media(max-width: 750px){
+    .btn-menu{
+        display: block;
+    }
+    .btn-menu.active::after,
+    .btn-menu.active::before{
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transform: rotateZ(90deg);
+    transition: .3s;
+    }
+    .btn-menu.active{
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transform: rotateZ(-45deg);
+    transition: .3s;
+    }
+}
