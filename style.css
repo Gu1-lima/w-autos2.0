@@ -32,10 +32,8 @@ a {
 }
 
 .infos{
-    max-width: 1280px;
     height: 70px;
     display: flex;
-    margin-inline: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -67,6 +65,10 @@ a {
     background: none;
     border-top: 4px solid #FFF;
     cursor: pointer;
+    transition: .3s;
+    top: 26px;
+    right: 16px;
+    position: fixed;
 }
 
 .btn-menu::before,
@@ -77,13 +79,9 @@ a {
     height: 4px;
     background: #FFF;
     margin-top: 5px;
+    transition: .3s;
 }
-
-@media(max-width: 750px){
-    .btn-menu{
-        display: block;
-    }
-    .btn-menu.active::after,
+.btn-menu.active::after,
     .btn-menu.active::before{
     position: absolute;
     bottom: 0;
@@ -93,7 +91,6 @@ a {
     border-radius: 12px;
     cursor: pointer;
     transform: rotateZ(90deg);
-    transition: .3s;
     }
     .btn-menu.active{
     width: 30px;
@@ -104,5 +101,58 @@ a {
     cursor: pointer;
     transform: rotateZ(-45deg);
     transition: .3s;
+    }
+
+@media(max-width: 750px){
+    .btn-menu{
+        display: block;
+        z-index: 1;
+    }
+
+    .infos-item a{
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .infos-item li:ntg-child(1) a{
+        transition: 0,5s 0,2s;
+    }
+
+    .infos-item li:ntg-child(2) a{
+        transition: 0,5s 0,4s;
+    }
+
+    .infos-item li:ntg-child(3) a{
+        transform: 0,5s 0,6s;
+    }
+
+    .infos-item.active{
+        position: fixed;
+        gap: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: black;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+    /* Estilos ativos */
+    .infos-item.active, .infos-item{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .infos-item.active a{
+        opacity: 1;
+    }
+    .infos-item.active .btn-menu{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
     }
 }
