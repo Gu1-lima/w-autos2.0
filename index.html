@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>W.Autos 2.0</title>
 </head>
+
 <body>
-    <header>
-        <nav class="infos">
-                <a class="logo" href="index.html">W.Autos 2.0</a>
-                <button class="btn-menu"></button>
-            <ul class="infos-item">
-                <li><a class="infos-link" href="#">Carros</a></li>
-                <li><a class="infos-link" href="#">Sobre nós</a></li>
-                <li><a class="infos-link" href="#">Redes</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="index.html">W.Autos 2.0</a>
+            <button class="btn-menu"></button>
+            <nav class="infos">
+                <ul class="infos-item">
+                    <li><a class="infos-item-link" href="#">Carros</a></li>
+                    <li><a class="infos-item-link" href="#">Sobre nós</a></li>
+                    <li><a class="infos-item-link" href="#">Redes</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="hero"></main>
+    <section class="banner">
+        <div class="container-banner"><img class="container-banner-img" src="./assets/audi R8 1.png" alt=""></div>
+    </section>
+    <section id="car">
+        <div class="container">
+            <div class="title">
+                <h1 class="title-carros">Carros</h1>
+            </div>
+            
+            <div class="car">
+                <div class="car-div-img">
+                    <img class="car-img" src="./assets/evoque.svg" alt="">
+                </div>
+                <div class="car-infos">
+                    <h1 class="car-infos-nome">Range Rouver Evoque</h1>
+                    <div class="car-infos-div">
+                        <p class="car-infos-preco">R$ 427.950,00</p>
+                        <div class="car-infos-parcelas-div">
+                            <p class="car-infos-parcelas">Ou até <b class="x">60x</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="car-btn">
+                        <a class="car-btn-text" href="">Saiba mais</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutUS">
+        <div class="container">
+
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+
+
+        </div>
+    </footer>
+    <main class="displey"></main>
     <script src="index.js"></script>
 </body>
+
 </html>

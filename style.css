@@ -1,158 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-
-* {
-    padding: 0;
+/*Reset CSS*/
+*{
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-html {
+html{
     scroll-behavior: smooth;
 }
 
-body {
-    width: 100%;
+body{
+    max-width: 100%;
     overflow-x: hidden;
+    background-color: #1e1e1e;
 }
 
-header {
-    background-color: black;
-    padding-inline: 60px;
+ul{
+    padding: 0;
+    list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
-    color: #FFF;
 }
 
-.logo {
-    font-family: 'EB Garamond', serif;
-    color: #FFF;
-    font-size: 35px;
-    font-weight: 500;
+img{
+    max-width: 100%;
 }
 
-.infos{
-    height: 70px;
+/*Container Styles*/
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+@media(max-width: 800px){
+    .container{
+        padding: 0 90px;
+    }
+}
+
+@media(max-width: 700px){
+    .container{
+        padding: 0 70px;
+    }
+}
+
+@media(max-width: 500px){
+    .container{
+        padding: 0 50px;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        padding: 0 30px;
+    }
+}
+/*Header Styles*/
+.header{
+    background: black;
+    padding: 30px 15px;
+    position: fixed;
+    width: 100vw;
+}
+.btn-menu{
+    display: none;
+}
+.header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.infos-item {
+.logo{
+    font-family: 'EB Garamond', serif;
+    color: #F4F4F4;
+    font-size: 32px;
+}
+.infos-item{
     display: flex;
-    list-style: none;
-    gap: 15px;
     align-items: center;
-    font-style: normal;
+    justify-content: space-around;
+    gap: 30px;
 }
-
-.infos-item a{
+.infos-item a {
+    color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
-    padding-block: 15px;
     font-weight: 700;
-    line-height: normal;
-    font-size: 16px;
+}
+.infos-item-link:hover{
+    color: #665e5e;
+    transition: 0.5s;
+    font-size: 18px;
+}
+/*Banner Styles*/
+.container-banner{
+    width: 100%;
+    padding-top: 100px;
+}
+.container-banner-img{
+    width: 100%;
+}
+/*Cars Styles*/
+.title{
+    padding: 25px 0px;
+}
+.title-carros{
+    color: #F4F4F4;
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
 }
 
-.hero{
-    height: calc(100vh - 70px);
-    background: #1e1e1e;
+.car{
+    background-color: #303030;
+    width: 450px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
-.btn-menu{
-    display: none;
-    border: none;
-    background: none;
-    border-top: 4px solid #FFF;
-    cursor: pointer;
-    transition: .3s;
-    top: 26px;
-    right: 16px;
-    position: fixed;
+.car-img{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    transition: 0.5s;
 }
 
-.btn-menu::before,
-.btn-menu::after{
-    content: "";
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #FFF;
-    margin-top: 5px;
-    transition: .3s;
+.car-div-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    transition: 0.5s;
 }
-.btn-menu.active::after,
-    .btn-menu.active::before{
-    position: absolute;
-    bottom: 0;
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 12px;
-    cursor: pointer;
-    transform: rotateZ(90deg);
-    }
-    .btn-menu.active{
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 12px;
-    position: relative;
-    cursor: pointer;
-    transform: rotateZ(-45deg);
-    transition: .3s;
-    }
 
-@media(max-width: 750px){
-    .btn-menu{
-        display: block;
-        z-index: 1;
-    }
-
-    .infos-item a{
-        font-size: 24px;
-        opacity: 0;
-    }
-
-    .infos-item li:ntg-child(1) a{
-        transition: 0,5s 0,2s;
-    }
-
-    .infos-item li:ntg-child(2) a{
-        transition: 0,5s 0,4s;
-    }
-
-    .infos-item li:ntg-child(3) a{
-        transform: 0,5s 0,6s;
-    }
-
-    .infos-item.active{
-        position: fixed;
-        gap: 0;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background: black;
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-        pointer-events: none;
-    }
-    /* Estilos ativos */
-    .infos-item.active, .infos-item{
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
-    .infos-item.active a{
-        opacity: 1;
-    }
-    .infos-item.active .btn-menu{
-        position: fixed;
-        top: 26px;
-        right: 16px;
-        border-top-color: transparent;
-    }
+.car-img:hover{
+    transform: scale(1.12);
 }
+
+.car-infos{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+
+.car-infos-nome{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px;
+    color: #F4F4F4;
+}
+
+.car-infos-preco{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #F4F4F4;
+    padding-top: 10px;
+}
+
+.car-infos-parcelas{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #F4F4F4;
+}
+
+.car-infos-parcelas-div{
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    
+}
+
+.x{
+    color: red;
+}
+
+.car-btn{
+    background-color: #111111;
+    border-style: none;
+    width: 450px;
+    height: 100px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-btn-text{
+    font-size: 30px;
+    color: #F4F4F4;
+    font-weight: 700;
+}
+
+/*about us Styles*/
+/*Contacts  Styles*/
+/*Footer Styles*/
+/*Mobile Styles*/
