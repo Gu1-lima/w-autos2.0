@@ -176,6 +176,7 @@ img{
     transform: scale( 1.03);
     transition: 0.5s;
 }
+
 /*Cars Styles*/
 
 .container-car{
@@ -279,6 +280,51 @@ img{
     font-size: 30px;
     color: #F4F4F4;
     font-weight: 700;
+}
+
+/* Modal styles */
+
+.car-modal{
+    background-color: #303030;
+    display: flex;
+    border-radius: 50px;
+    border: none;
+    width: 90%;
+    height: 100%;
+}
+
+.car-modal-container{
+    display: flex;
+    padding: 25px;
+}
+
+.car-modal-container-infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.car-modal-title{
+    color: #F4F4F4;
+    font-size: 28px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.car-modal-preco{
+    color: #F4F4F4;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.car-modal-img{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.car-modal-img-min{
+    width: 30%;
 }
 
 /*Contacts  Styles*/
