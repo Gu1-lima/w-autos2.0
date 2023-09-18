@@ -284,21 +284,33 @@ img{
 
 /* Modal styles */
 
-.car-modal{
-    background-color: #303030;
-    display: flex;
+dialog{
+    width: 90%;
     border-radius: 50px;
     border: none;
-    width: 90%;
-    height: 100%;
+    background-color: #303030;
+    margin: auto 50px;
 }
+
+dialog::backdrop{
+    background-color: rgb(0 0 0/.5);
+}
+
+.car-modal{
+    display: flex;
+}
+
+
 
 .car-modal-container{
     display: flex;
-    padding: 25px;
+    padding: 40px;
+    width: 33.33%;
+    height: 100%;
 }
 
 .car-modal-container-infos{
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -322,9 +334,139 @@ img{
     margin: 30px 0;
     width: 100%;
 }
+.car-modal-img-div{
+    width: 100%;
+    display: flex;
+    gap: 6.7%;
+}
 
 .car-modal-img-min{
-    width: 30%;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.car-modal-btn{
+    background-color: #151515;
+    border: none;
+    margin-top: 30px;
+    padding: 24px 0;
+    border-radius: 50px;
+    color: #F4F4F4;
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+    transition: 0.5s;
+}
+
+.car-modal-btn:hover{
+    background-color: #1E1E1E;
+    transition: 0.5s;
+}
+
+.line{
+    background-color: #F4F4F4;
+    width: 2px;
+    margin: 40px 0;
+}
+
+.car-modal-infos-p{
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.car-modal-container-pedido{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-close{
+    width: 30px;
+    height: 4px;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transform: rotateZ(-45deg);
+  }
+  .btn-close::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    cursor: pointer;
+    transform: rotateZ(90deg);
+  }
+
+.car-modal-color{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.color-black{
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.color-black.Clicked{
+    box-shadow: 0px 0px 1px #F4F4F4;
+}
+
+.color-white{
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    background-color: #F4F4F4;
+    cursor: pointer;
+}
+
+.color-white.Clicked{
+    box-shadow: 0px 0px 1px #F4F4F4;
+}
+
+.color-dish{
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    background-color: #B6B6B6;
+    cursor: pointer;
+}
+
+.color-red.Clicked{
+    box-shadow: 0px 0px 2px #F4F4F4;
+}
+
+.color-red{
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    background-color: #FF0000;
+    cursor: pointer;
+}
+
+.color-dish.Clicked{
+    box-shadow: 0px 0px 2px #F4F4F4;
+}
+
+.color-blue{
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    background-color: #1500FF;
+    cursor: pointer;
+}
+
+.color-blue.Clicked{
+    box-shadow: 0px 0px 2px #F4F4F4;
 }
 
 /*Contacts  Styles*/
