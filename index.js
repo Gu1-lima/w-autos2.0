@@ -17,6 +17,11 @@ let blue = document.querySelector('.color-blue');
     blue.classList.toggle("Clicked");
 })
 
+let red = document.querySelector('.color-red');
+    red.addEventListener("click", () => {
+    red.classList.toggle("Clicked");
+})
+
 let black = document.querySelector('.color-black');
     black.addEventListener("click", () => {
     black.classList.toggle("Clicked");
@@ -37,3 +42,35 @@ list.addEventListener("click", () => {
     infos.classList.toggle("active");
 });
 
+let btn2020 = document.querySelector('#btn-2020');
+    btn2020.addEventListener("click", () => {
+    btn2020.classList.toggle("clicked");
+})
+
+let btn2021 = document.querySelector('#btn-2021');
+    btn2021.addEventListener("click", () => {
+    btn2021.classList.toggle("clicked");
+})
+
+let btn2022 = document.querySelector('#btn-2022');
+    btn2022.addEventListener("click", () => {
+    btn2022.classList.toggle("clicked");
+})
+
+let btn2023 = document.querySelector('#btn-2023');
+    btn2023.addEventListener("click", () => {
+    btn2023.classList.toggle("clicked");
+})
+
+
+// Continuar a lógica
+let stars = document.querySelectorAll('.star');
+let sizeStars = stars.length;
+stars.forEach(elemento => {
+    elemento.addEventListener("click", ()=>{
+        console.log(elemento.outerHTML);
+        elemento.classList.toggle("clicked");
+        elemento.classList.toggle("star");
+
+    })
+});

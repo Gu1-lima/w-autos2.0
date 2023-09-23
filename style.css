@@ -289,7 +289,7 @@ dialog{
     border-radius: 50px;
     border: none;
     background-color: #303030;
-    margin: auto 50px;
+    margin: auto auto;
 }
 
 dialog::backdrop{
@@ -299,8 +299,6 @@ dialog::backdrop{
 .car-modal{
     display: flex;
 }
-
-
 
 .car-modal-container{
     display: flex;
@@ -375,6 +373,39 @@ dialog::backdrop{
     padding-top: 30px;
 }
 
+.car-modal-infos-p-a{
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.car-modal-infos-container-avaliacoes{
+    display: flex;
+    align-items: center;
+    padding-top: 10px ;
+}
+
+.star{
+    background-image: url('./assets/star2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.clicked{
+    background-image: url('./assets/star-clicked.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+}
+
 .car-modal-container-pedido{
     width: 100%;
     display: flex;
@@ -418,7 +449,7 @@ dialog::backdrop{
 }
 
 .color-black.Clicked{
-    box-shadow: 0px 0px 1px #F4F4F4;
+    border: 2px solid #F4F4F4;
 }
 
 .color-white{
@@ -430,7 +461,7 @@ dialog::backdrop{
 }
 
 .color-white.Clicked{
-    box-shadow: 0px 0px 1px #F4F4F4;
+    border: 2px solid #151515;
 }
 
 .color-dish{
@@ -441,8 +472,9 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-.color-red.Clicked{
-    box-shadow: 0px 0px 2px #F4F4F4;
+
+.color-dish.Clicked{
+    border: 2px solid #151515;
 }
 
 .color-red{
@@ -453,8 +485,8 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-.color-dish.Clicked{
-    box-shadow: 0px 0px 2px #F4F4F4;
+.color-red.Clicked{
+    border: 2px solid #151515;
 }
 
 .color-blue{
@@ -466,7 +498,50 @@ dialog::backdrop{
 }
 
 .color-blue.Clicked{
-    box-shadow: 0px 0px 2px #F4F4F4;
+    border: 2px solid #151515;
+}
+
+.car-modal-container-ano{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn-style{
+    border-style: none;
+    width: 25%;
+    height: 100%;
+    background-color: #303030;
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px;
+    border: 3px solid #1E1E1E;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-style:hover{
+    background-color: #1e1e1e;
+    border: 3px solid #F4F4F4;
+    transition: 0.5s;
+}
+
+.btn-style.clicked{
+    border-style: none;
+    width: 25%;
+    height: 100%;
+    background-color: #303030;
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px;
+    border: 3px solid #f4f4f4;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 /*Contacts  Styles*/
