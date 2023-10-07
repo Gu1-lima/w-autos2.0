@@ -529,7 +529,7 @@ dialog::backdrop{
     transition: 0.5s;
 }
 
-.btn-style.clicked{
+.btn-style.select{
     border-style: none;
     width: 25%;
     height: 100%;
