@@ -1,17 +1,39 @@
 let list = document.querySelector(".btn-menu");
 let infos = document.querySelector(".infos-item");
 let btnModal = document.querySelector('.car-btn');
-let carModal = document.querySelector('dialog');
-let btnClose = document.querySelector('.btn-close');
+let btnModalList = document.querySelectorAll('.car-btn');
+let carModals = document.querySelectorAll('[data-dialog]');
+let btnsClose = document.querySelectorAll('.btn-close');
+let dataBtn = document.querySelectorAll("[data-button]");
 
-btnModal.onclick = function () {
-    carModal.showModal();
+dataBtn.forEach((item)=>{
+    item.onclick = function () {
+            let valueBtn = Object.values(item.dataset)[0];
+            carModals.forEach((carModel)=>{
+                let valueModel = Object.values(carModel.dataset)[0];
+                if(valueBtn == valueModel){
+                    carModel.showModal();
+                }
+            })
+   }
+})
+
+btnsClose.forEach((item)=>{
+    item.onclick =  function () {
+        carModals.forEach((carModel)=>{
+                carModel.close();
+        })
+    }
+})
+/*
+btnModal.onclick = function ({target}) {
+     carModal.showModal();
 }
 
 btnClose.onclick = function () {
     carModal.close();
 }
-
+*/
  let btnColors = document.querySelectorAll(".colors");
  btnColors.forEach(elemento => {
     let  el = null;
@@ -44,6 +66,33 @@ let clearStyleYears = (value)=>{
        elemento.classList.remove("select")
    });
 }
+
+let btnModelos = document.querySelectorAll(".btn-modelos");
+btnModelos.forEach(elemento => {
+   let  el = null;
+   elemento.addEventListener("click", ()=>{
+       clearStyleModelos(btnModelos);
+       elemento.classList.toggle("select")
+       switch(elemento.value){
+            case "SE":
+                let priceEvoque = document.querySelector(".car-evoque");
+                priceEvoque.innerHTML = `R$ 427.950 <br>Ou até 60x`
+            break;
+            case "R-dynamic HSE":
+                let priceEvoqueDefault = document.querySelector(".car-evoque");
+                priceEvoqueDefault.innerHTML = `R$ 459.950 <br>Ou até 60x`
+            break;
+       }
+       //changePrice();
+   })
+});
+let clearStyleModelos = (value)=>{          
+   btn = value;
+   btn.forEach(elemento => {
+       elemento.classList.remove("select")
+   });
+}
+
 
 
 
