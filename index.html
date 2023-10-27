@@ -27,11 +27,45 @@
                     <li><a class="infos-item-link" href="#car">Carros</a></li>
                     <li><a class="infos-item-link" href="#aboutUS">Sobre nós</a></li>
                     <li><a class="infos-item-link" href="#categories">Categorias</a></li>
-                    <li><a class="infos-item-link" href="#categories">Carrinho</a></li>
+                    <li><a class="infos-item-link" data-button="Carrinho">Carrinho</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <dialog data-dialog="Carrinho">
+
+        <div class="car-modal">
+            <div class="car-modal-container produto">
+
+                <div class="car-modal-container-infos">
+                    <h1 class="car-modal-title Carrinho">Carrinho</h1>
+                </div>
+
+                <div class="produto-carrinho">
+                    <div class="car-div-img">
+                        <img class="car-img" src="./assets/evoque.svg" alt="">
+                    </div>
+                    <div class="produto-carrinho-div">
+                        <h1 class="produto-carrinho-nome">Nome do produto</h1>
+                        <div class="car-infos-div">
+                            <p class="produto-carrinho-infos"><b>R$ 000.000</b></p>
+                            <p class="produto-carrinho-infos"><b>Versão:</b></p>
+                            <p class="produto-carrinho-infos"><b>Cor:</b></p>
+
+                        </div>
+                    </div>
+                    <div>
+                        <button class="car-btn">
+                            <p class="car-btn-text" data-button="Finalizar">Finalizar Compra</p>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </dialog>
+
     <section class="banner">
         <div class="container-banner"><img class="container-banner-img" src="./assets/audi R8 1.png" alt=""></div>
     </section>
@@ -89,7 +123,7 @@
     <section id="car">
         <div class="container">
             <div class="container-title">
-                <h1 class="title">SUV+- </h1>
+                <h1 class="title">SUV</h1>
             </div>
 
             <div class="container-car">

@@ -580,6 +580,40 @@ dialog::backdrop{
     transition: 0.3s;
 }
 
+/* Carrinho Styles */
+.produto{
+    display: flex;
+    flex-direction: column;
+}
+
+.Carrinho{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.produto-carrinho{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.produto-carrinho-div{
+    margin: 25px;
+}
+
+.produto-carrinho-nome{
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.produto-carrinho-infos{
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
 /*Contacts  Styles*/
 /*Footer Styles*/
 /*Mobile Styles*/
