@@ -353,6 +353,7 @@ dialog::backdrop{
     font-size: 24px;
     font-family: 'DM Sans', sans-serif;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .car-modal-btn:hover{
@@ -587,7 +588,7 @@ dialog::backdrop{
 }
 
 .Carrinho{
-    font-size: 35px;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 
@@ -599,21 +600,109 @@ dialog::backdrop{
 }
 
 .produto-carrinho-div{
-    margin: 25px;
+    margin: 20px;
 }
 
 .produto-carrinho-nome{
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
 }
 
 .produto-carrinho-infos{
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 18px;
+    margin-top: 10px;
 
 }
+
+.produto-carrinho-badeiras{
+    background-color: #1E1E1E;
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-carrinho-badeiras-imgs{
+    width: 20%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #f4f4f4;
+    align-items: center;
+}
+
+.carinho{
+    font-size: 18px;
+    width: 100%;
+}
+
 /*Contacts  Styles*/
 /*Footer Styles*/
+
+footer {
+    background-color: #151515;
+    color: #fff;
+    border-top:  3px solid black;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#Contato{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #151515;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li{
+    margin-bottom: 15px;
+}
+
+.meio-contato li a{
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.last-text{
+    text-align: center;
+    background-color: #111010;
+    color: #fff;
+}
+.li-footer{
+    list-style: none;
+}
+.icons{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    margin-top: 15px;
+}
+
 /*Mobile Styles*/
