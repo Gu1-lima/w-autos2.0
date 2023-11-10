@@ -78,9 +78,9 @@ let shoppingCartUpdate = ()=>{
                 break;
             }
             name.innerHTML = `${dataName}`;
-            price.innerHTML = `${dataPrice}`;
-            version.innerHTML = `${dataVersion}`;
-            color.innerHTML = `${newColor}`;
+            price.innerHTML = `<b>Preço:</b> ${dataPrice}`;
+            version.innerHTML = `<b>Versão:</b> ${dataVersion}`;
+            color.innerHTML = `<b>Cor:</b> ${newColor}`;
             
             switch(dataName){
                 case "Range Rouver Evoque":
@@ -107,6 +107,7 @@ let shoppingCartUpdate = ()=>{
     })
 }
 shoppingCartUpdate();
+
 /*
 btnModal.onclick = function ({target}) {
      carModal.showModal();
@@ -118,6 +119,7 @@ btnClose.onclick = function () {
 */
 
 /* Itens cicados ou selecionados */
+
  let btnColors = document.querySelectorAll(".colors");
  btnColors.forEach(elemento => {
     let  el = null;
@@ -336,15 +338,3 @@ let activeStars = (starClicked)=>{
     }
     console.log(statusActive)
 }
-
-
-/*
-let sizeStars = stars.length;
-stars.forEach(elemento => {
-    elemento.addEventListener("click", (item)=>{
-        elemento.classList.toggle("clicked");
-        elemento.classList.toggle("star");
-
-    })
-});
-*/

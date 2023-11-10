@@ -24,9 +24,9 @@
             <button class="btn-menu"></button>
             <nav class="infos">
                 <ul class="infos-item">
-                    <li><a class="infos-item-link" href="#carros">Carros</a></li>
                     <li><a class="infos-item-link" href="#aboutUS">Sobre nós</a></li>
                     <li><a class="infos-item-link" href="#categories">Categorias</a></li>
+                    <li><a class="infos-item-link" href="#carros">Carros</a></li>
                     <li><a class="infos-item-link" data-button="Carrinho">Carrinho</a></li>
                 </ul>
             </nav>
@@ -55,11 +55,7 @@
 
                         </div>
                     </div>
-                    <div>
-                        <button class="car-btn">
-                            <p class="car-btn-text carinho" data-button="Finalizar">Finalizar Compra</p>
-                        </button>
-                    </div>
+
                 </div>
             </div>
 
@@ -67,19 +63,45 @@
 
             <div class="car-modal-container produto">
 
-                <div class="car-modal-container-infos">
-                    <h1 class="car-modal-title Carrinho">Pagar ccom:</h1>
+                <div class="car-modal-container-infos ">
+                    <div class="car-modal-container-pedido pagamento">
+                        <h1 class="car-modal-title ">Pagar com:</h1>
+                    <div class="btn-close"></div>
+                    </div>
                 </div>
 
                 <div class="produto-carrinho-badeiras">
                     <img class="produto-carrinho-badeiras-imgs" src="./assets/masterCard.svg" alt="">
                     <img class="produto-carrinho-badeiras-imgs" src="./assets/Visa.svg" alt="">
                     <img class="produto-carrinho-badeiras-imgs" src="./assets/Boleto.svg" alt="">
-                    <img class="produto-carrinho-badeiras-imgs" src="./assets/Elo.svg" alt="">
                     <img class="produto-carrinho-badeiras-imgs" src="./assets/Pix.svg" alt="">
                     <img class="produto-carrinho-badeiras-imgs" src="./assets/AmericanExpless.svg" alt="">
-                    <img class="produto-carrinho-badeiras-imgs" src="./assets/HiperCard.svg" alt="">
                 </div>
+
+                <div class="form-pagamento">
+                    <form>
+                        <h2>insira os Dados</h2>
+                        <div>
+                            <input class="form-pagamento-dados" placeholder="Numero do cartão" type="number" required="required">
+                        </div>
+                        
+                        <div class="form-pagamento-dados-div">
+                            <input class="form-pagamento-dados" placeholder="Mês do cartão" type="number" required="required">
+
+                            <input class="form-pagamento-dados" placeholder="Ano do cartão" type="number" required="required">
+                        </div>
+
+                        <div>
+                            <input class="form-pagamento-dados" placeholder="Nome do titular" type="text" required="required">
+                        </div>
+
+                        <div>
+                            <input class="form-pagamento-dados" placeholder="Codigo de segurança(CVV)" type="number" required="required">
+                        </div>
+                        <input class="btn-form" type="submit" value="Finalizar Pedido">
+                    </form>
+                </div>
+
             </div>
 
         </div>
@@ -209,7 +231,7 @@
                                 </div>
 
                                 <button class="car-modal-btn"><b>Adicione ao carinho</b></button>
-                                <button class="car-modal-btn"><b>Compre Agora</b></button>
+                                <button class="car-modal-btn" data-button="Carrinho" ><b>Compre Agora</b></button>
 
                             </div>
 
@@ -330,7 +352,7 @@
                                 </div>
 
                                 <button class="car-modal-btn"><b>Adicione ao carinho</b></button>
-                                <button class="car-modal-btn"><b>Compre Agora</b></button>
+                                <button class="car-modal-btn" data-button="Carrinho"><b>Compre Agora</b></button>
 
                             </div>
 
@@ -450,7 +472,7 @@
                                 </div>
 
                                 <button class="car-modal-btn"><b>Adicione ao carinho</b></button>
-                                <button class="car-modal-btn"><b>Compre Agora</b></button>
+                                <button class="car-modal-btn" data-button="Carrinho"><b>Compre Agora</b></button>
 
                             </div>
 
@@ -568,7 +590,7 @@
                                 </div>
 
                                 <button class="car-modal-btn"><b>Adicione ao carinho</b></button>
-                                <button class="car-modal-btn"><b>Compre Agora</b></button>
+                                <button class="car-modal-btn" data-button="Carrinho"><b>Compre Agora</b></button>
 
                             </div>
 
@@ -690,7 +712,7 @@
                                 </div>
 
                                 <button class="car-modal-btn"><b>Adicione ao carinho</b></button>
-                                <button class="car-modal-btn"><b>Compre Agora</b></button>
+                                <button class="car-modal-btn" data-button="Carrinho"><b>Compre Agora</b></button>
 
                             </div>
 
@@ -809,7 +831,7 @@
                                 </div>
 
                                 <button class="car-modal-btn"><b>Adicione ao carinho</b></button>
-                                <button class="car-modal-btn"><b>Compre Agora</b></button>
+                                <button class="car-modal-btn" data-button="Carrinho"><b>Compre Agora</b></button>
 
                             </div>
 

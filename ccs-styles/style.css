@@ -1,124 +1,133 @@
 /*Reset CSS*/
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: #1e1e1e;
 }
 
-ul{
+ul {
     padding: 0;
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 /*Container Styles*/
 
-.container{
+.container {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 110px;
 }
 
-@media(max-width: 800px){
-    .container{
+@media(max-width: 800px) {
+    .container {
         padding: 0 90px;
     }
 }
 
-@media(max-width: 700px){
-    .container{
+@media(max-width: 700px) {
+    .container {
         padding: 0 70px;
     }
 }
 
-@media(max-width: 500px){
-    .container{
+@media(max-width: 500px) {
+    .container {
         padding: 0 50px;
     }
 }
 
-@media(max-width: 400px){
-    .container{
+@media(max-width: 400px) {
+    .container {
         padding: 0 30px;
     }
 }
+
 /*Header Styles*/
-.header{
+.header {
     background: black;
     padding: 30px 0;
     position: fixed;
     width: 100vw;
 }
-.btn-menu{
+
+.btn-menu {
     display: none;
 }
-.header .container{
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     font-family: 'EB Garamond', serif;
     color: #F4F4F4;
     font-size: 32px;
 }
-.infos-item{
+
+.infos-item {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 30px;
 }
+
 .infos-item a {
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
 }
-.infos-item-link:hover{
+
+.infos-item-link:hover {
     color: #665e5e;
     transition: 0.5s;
     font-size: 18px;
 }
+
 /*Banner Styles*/
-.container-banner{
+.container-banner {
     width: 100%;
     padding-top: 100px;
 }
-.container-banner-img{
+
+.container-banner-img {
     width: 100%;
 }
 
 /*about us Styles*/
 
-.aboutUS-infos{
+.aboutUS-infos {
     background-color: #151515;
 }
 
-.aboutUS-infos-title{
+.aboutUS-infos-title {
     font-family: 'Dm Sans', sans-serif;
     font-size: 40px;
     color: #F4F4F4;
     padding: 30px 0;
 }
 
-.aboutUS-infos-container{
+.aboutUS-infos-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -126,7 +135,7 @@ img{
     gap: 135px;
 }
 
-.aboutUS-infos-p{
+.aboutUS-infos-p {
     font-family: 'DM Sans', sans-serif;
     color: #F4F4F4;
     font-size: 24px;
@@ -134,7 +143,7 @@ img{
     max-width: 550px;
 }
 
-.aboutUS-infos-p-w{
+.aboutUS-infos-p-w {
     font-size: 400px;
     font-family: 'EB Garamond', r;
     color: #F4F4F4;
@@ -142,51 +151,52 @@ img{
     line-height: 80%;
 }
 
-.aboutUS-infos-p-colecao{
+.aboutUS-infos-p-colecao {
     font-family: 'DM Sans', sans-serif;
     color: #F4F4F4;
     font-size: 24px;
     display: block;
     padding-bottom: 50px;
 }
+
 /*Categories Styles */
 
-.container-title{
+.container-title {
     display: flex;
     justify-content: center;
 }
 
-.container-categories{
+.container-categories {
     background-color: #151515;
     width: 100%;
 }
 
-.categories-container{
+.categories-container {
     display: flex;
     width: 100%;
 }
 
-.categories-img{
+.categories-img {
     width: 25%;
     height: 100%;
     transition: 0.5s;
 }
 
-.categories-img:hover{
-    transform: scale( 1.03);
+.categories-img:hover {
+    transform: scale(1.03);
     transition: 0.5s;
 }
 
 /*Cars Styles*/
 
-.container-car{
+.container-car {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
 }
 
-.title{
+.title {
     padding: 30px 0;
     color: #F4F4F4;
     font-size: 30px;
@@ -194,7 +204,7 @@ img{
     font-weight: 700;
 }
 
-.car{
+.car {
     background-color: #303030;
     max-width: 348px;
     max-height: 465px;
@@ -205,18 +215,18 @@ img{
     margin-bottom: 40px;
 }
 
-.car:hover{
+.car:hover {
     transform: scale(1.05);
     transition: 0.5s;
     cursor: pointer;
 }
 
-.car-img{
+.car-img {
     width: 90%;
     border-radius: 12px;
 }
 
-.car-div-img{
+.car-div-img {
     width: 100%;
     height: 100%;
     padding-top: 20px;
@@ -225,46 +235,46 @@ img{
     justify-content: center;
 }
 
-.car-div-img:hover{
+.car-div-img:hover {
     transform: scale(1.12);
 }
 
-.car-infos{
+.car-infos {
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
-.car-infos-nome{
+.car-infos-nome {
     font-family: 'DM Sans', sans-serif;
     font-size: 28px;
     color: #F4F4F4;
 }
 
-.car-infos-preco{
+.car-infos-preco {
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     color: #F4F4F4;
     padding-top: 10px;
 }
 
-.car-infos-parcelas{
+.car-infos-parcelas {
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     color: #F4F4F4;
 }
 
-.car-infos-parcelas-div{
+.car-infos-parcelas-div {
     display: flex;
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
 }
 
-.x{
+.x {
     color: red;
 }
 
-.car-btn{
+.car-btn {
     background-color: #151515;
     border-style: none;
     width: 100%;
@@ -275,7 +285,7 @@ img{
     align-items: center;
 }
 
-.car-btn-text{
+.car-btn-text {
     display: block;
     font-size: 30px;
     color: #F4F4F4;
@@ -284,7 +294,7 @@ img{
 
 /* Modal styles */
 
-dialog{
+dialog {
     width: 90%;
     border-radius: 50px;
     border: none;
@@ -292,35 +302,35 @@ dialog{
     margin: auto auto;
 }
 
-dialog::backdrop{
+dialog::backdrop {
     background-color: rgb(0 0 0/.5);
 }
 
-.car-modal{
+.car-modal {
     display: flex;
 }
 
-.car-modal-container{
+.car-modal-container {
     display: flex;
     padding: 40px;
     width: 33.33%;
     height: 100%;
 }
 
-.car-modal-container-infos{
+.car-modal-container-infos {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.car-modal-title{
+.car-modal-title {
     color: #F4F4F4;
     font-size: 28px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
 }
 
-.car-modal-preco{
+.car-modal-preco {
     color: #F4F4F4;
     padding-top: 30px;
     font-size: 30px;
@@ -328,22 +338,23 @@ dialog::backdrop{
     font-weight: 700;
 }
 
-.car-modal-img{
+.car-modal-img {
     margin: 30px 0;
     width: 100%;
 }
-.car-modal-img-div{
+
+.car-modal-img-div {
     width: 100%;
     display: flex;
     gap: 6.7%;
 }
 
-.car-modal-img-min{
+.car-modal-img-min {
     width: 20%;
     border-radius: 5px;
 }
 
-.car-modal-btn{
+.car-modal-btn {
     background-color: #151515;
     border: none;
     margin-top: 30px;
@@ -356,38 +367,38 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-.car-modal-btn:hover{
+.car-modal-btn:hover {
     background-color: #1E1E1E;
     transition: 0.5s;
 }
 
-.line{
+.line {
     background-color: #F4F4F4;
     width: 2px;
     margin: 40px 0;
 }
 
-.car-modal-infos-p{
+.car-modal-infos-p {
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     padding-top: 30px;
 }
 
-.car-modal-infos-p-a{
+.car-modal-infos-p-a {
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     padding-top: 20px;
 }
 
-.car-modal-infos-container-avaliacoes{
+.car-modal-infos-container-avaliacoes {
     display: flex;
     align-items: center;
-    padding-top: 10px ;
+    padding-top: 10px;
 }
 
-.star{
+.star {
     background-image: url('/assets/star2.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -397,7 +408,7 @@ dialog::backdrop{
     height: 30px;
 }
 
-.clicked{
+.clicked {
     background-image: url('/assets/star-clicked.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -407,14 +418,14 @@ dialog::backdrop{
     height: 30px;
 }
 
-.car-modal-container-pedido{
+.car-modal-container-pedido {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.btn-close{
+.btn-close {
     width: 30px;
     height: 4px;
     background-color: #F4F4F4;
@@ -422,8 +433,9 @@ dialog::backdrop{
     position: relative;
     cursor: pointer;
     transform: rotateZ(-45deg);
-  }
-  .btn-close::after{
+}
+
+.btn-close::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -433,15 +445,15 @@ dialog::backdrop{
     border-radius: 12px;
     cursor: pointer;
     transform: rotateZ(90deg);
-  }
+}
 
-.car-modal-color{
+.car-modal-color {
     display: flex;
     gap: 20px;
     padding: 20px 0;
 }
 
-.color-black{
+.color-black {
     height: 40px;
     width: 40px;
     border-radius: 12px;
@@ -449,11 +461,11 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-.color-black.Clicked{
+.color-black.Clicked {
     border: 2px solid #F4F4F4;
 }
 
-.color-white{
+.color-white {
     height: 40px;
     width: 40px;
     border-radius: 12px;
@@ -461,11 +473,11 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-.color-white.Clicked{
+.color-white.Clicked {
     border: 2px solid #151515;
 }
 
-.color-dish{
+.color-dish {
     height: 40px;
     width: 40px;
     border-radius: 12px;
@@ -474,11 +486,11 @@ dialog::backdrop{
 }
 
 
-.color-dish.Clicked{
+.color-dish.Clicked {
     border: 2px solid #151515;
 }
 
-.color-red{
+.color-red {
     height: 40px;
     width: 40px;
     border-radius: 12px;
@@ -486,11 +498,11 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-.color-red.Clicked{
+.color-red.Clicked {
     border: 2px solid #151515;
 }
 
-.color-blue{
+.color-blue {
     height: 40px;
     width: 40px;
     border-radius: 12px;
@@ -498,18 +510,18 @@ dialog::backdrop{
     cursor: pointer;
 }
 
-.color-blue.Clicked{
+.color-blue.Clicked {
     border: 2px solid #151515;
 }
 
-.car-modal-container-ano{
+.car-modal-container-ano {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-top: 30px;
 }
 
-.btn-style{
+.btn-style {
     border-style: none;
     width: 25%;
     height: 100%;
@@ -524,13 +536,13 @@ dialog::backdrop{
     transition: 0.3s;
 }
 
-.btn-style:hover{
+.btn-style:hover {
     background-color: #1e1e1e;
     border: 3px solid #F4F4F4;
     transition: 0.5s;
 }
 
-.btn-style.select{
+.btn-style.select {
     border-style: none;
     width: 25%;
     height: 100%;
@@ -545,7 +557,7 @@ dialog::backdrop{
     transition: 0.3s;
 }
 
-.btn-modelos{
+.btn-modelos {
     border-style: none;
     width: 25%;
     height: 100%;
@@ -560,13 +572,13 @@ dialog::backdrop{
     transition: 0.3s;
 }
 
-.btn-modelos:hover{
+.btn-modelos:hover {
     background-color: #1e1e1e;
     border: 3px solid #F4F4F4;
     transition: 0.5s;
 }
 
-.btn-modelos.select{
+.btn-modelos.select {
     border-style: none;
     width: 25%;
     height: 100%;
@@ -582,42 +594,51 @@ dialog::backdrop{
 }
 
 /* Carrinho Styles */
-.produto{
+
+.produto {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.Carrinho{
-    font-size: 24px;
-    margin-bottom: 30px;
+.Carrinho {
+    font-size: 30px;
+    padding-bottom: 30px;
 }
 
-.produto-carrinho{
+.produto-carrinho {
     background-color: #1E1E1E;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
 }
 
-.produto-carrinho-div{
-    margin: 20px;
+.produto-carrinho-div {
+    margin: 30px;
 }
 
-.produto-carrinho-nome{
+.produto-carrinho-nome {
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-.produto-carrinho-infos{
+.produto-carrinho-infos {
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 30px;
+    margin-top: 15px;
 
 }
 
-.produto-carrinho-badeiras{
+.pagamento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.produto-carrinho-badeiras {
     background-color: #1E1E1E;
     display: flex;
     border-radius: 20px;
@@ -630,33 +651,114 @@ dialog::backdrop{
     justify-content: center;
 }
 
-.produto-carrinho-badeiras-imgs{
-    width: 20%;
+.produto-carrinho-badeiras-imgs {
+    width: 16%;
     height: auto;
     border-radius: 12px;
     border: 3px solid #f4f4f4;
     align-items: center;
 }
 
-.carinho{
-    font-size: 18px;
+.carinho {
+    font-size: 22px;
     width: 100%;
 }
 
-/*Contacts  Styles*/
+/* Fomulario de pagamento */
+
+.form-pagamento {
+    display: flex;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+}
+
+.form-pagamento form {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-pagamento h2 {
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    padding-bottom: 20px;
+}
+
+.form-pagamento-dados {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #555;
+    border-radius: 12px;
+    box-shadow: none;
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    margin: 10px 0;
+    padding: 20px 15px;
+}
+
+.form-pagamento-dados:hover {
+    border: 3px solid #f4f4f4;
+}
+
+.form-pagamento-dados-div {
+    display: flex;
+    gap: 10px;
+}
+
+.form-pagamento-dados :placeholder {
+    position: absolute;
+    right: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #F4F4F4;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.btn-form {
+    border-style:none ;
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    border: 3px solid #151515;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.btn-form:hover {
+    border: 3px solid #f4f4f4;
+}
+
 /*Footer Styles*/
 
 footer {
     background-color: #151515;
     color: #fff;
-    border-top:  3px solid black;
+    border-top: 3px solid black;
     text-align: center;
     padding: 50px;
     align-items: center;
     justify-content: center;
 }
 
-#Contato{
+#Contato {
     display: flex;
     gap: 5rem;
     justify-content: space-around;
@@ -664,45 +766,45 @@ footer {
     padding: 8rem;
     margin-top: 5rem;
     display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
 
-.meio-contato h3{
+.meio-contato h3 {
     color: #fff;
     font-size: 23px;
     margin-bottom: 1.6rem;
 }
 
-.meio-contato h5{
+.meio-contato h5 {
     font-size: 15px;
     font-weight: 600;
     color: #555;
 }
 
-.meio-contato li{
+.meio-contato li {
     margin-bottom: 15px;
 }
 
-.meio-contato li a{
+.meio-contato li a {
     display: block;
     color: #555;
     font-weight: 600;
     transition: all .35s ease;
 }
 
-.last-text{
+.last-text {
     text-align: center;
     background-color: #111010;
     color: #fff;
 }
-.li-footer{
+
+.li-footer {
     list-style: none;
 }
-.icons{
+
+.icons {
     width: 40px;
     height: 40px;
     margin: 5px;
     margin-top: 15px;
 }
-
-/*Mobile Styles*/
